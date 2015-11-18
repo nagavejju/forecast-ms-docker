@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+info:
+  component: Forecast Micro service - UP 
+
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+    metadataMap:
+      instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${random.value}}}
+  client:
+    registryFetchIntervalSeconds: 5
