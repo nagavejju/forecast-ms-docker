@@ -11,6 +11,7 @@ public class ForecastMsApplication {
 	public static void main(String[] args) {
 		System.out.println("test forecast microservice-------");
 		SpringApplication.run(ForecastMsApplication.class, args);
+		System.out.println("test forecast microservice-------end");
 	}
 
 }
