@@ -25,6 +25,8 @@ public class ForecastMsController {
 	@ResponseBody
 	Forecast getForecast(@PathVariable String city) {
 		
+		System.out.println(" In forecast ms----->" );
+		
 		if(stub){
 			return getStubForecastData(city);
 		}
