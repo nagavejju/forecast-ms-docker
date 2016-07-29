@@ -50,6 +50,9 @@ public class ForecastMsController {
 	@RequestMapping("/forecast")
 	@ResponseBody
 	Forecast getForecast() {
+		System.out.println(" In forecast ms----- without city>" );
+		String value1 = System.getenv("stubbuild");
+		String value2 = System.getenv("stubcontainer");
 		// default to Pune
 		String city = "Pune";
 		
