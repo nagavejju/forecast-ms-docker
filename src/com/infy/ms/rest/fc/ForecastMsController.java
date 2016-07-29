@@ -27,6 +27,12 @@ public class ForecastMsController {
 		
 		System.out.println(" In forecast ms----->" );
 		
+		String value1 = System.getenv("stubbuild");
+		String value2 = System.getenv("stubcontainer");
+		
+		System.out.println("stubbuild----->"+value1);
+		System.out.println("stubcontainer----->"+value2);
+		
 		if(stub){
 			return getStubForecastData(city);
 		}
